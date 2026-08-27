@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="dispatcher.main:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/dispatcher_main_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="dispatcher.main" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: com.mysql:mysql-connector-j:8.3.0" />
+          <element id="library" level="project" name="Gradle: org.apache.logging.log4j:log4j-core:2.24.1" />
+          <element id="library" level="project" name="Gradle: org.apache.logging.log4j:log4j-api:2.24.1" />
+          <element id="library" level="project" name="Gradle: org.mindrot:jbcrypt:0.4" />
+          <element id="library" level="project" name="Gradle: com.google.protobuf:protobuf-java:3.25.1" />
+        </element>
+        <element id="module-output" name="dispatcher.main" />
+      </element>
+      <element id="javaee-facet-resources" facet="dispatcher.main/web/Web Gradle : dispatcher-1.0-SNAPSHOT.war" />
+    </root>
+  </artifact>
+</component>
