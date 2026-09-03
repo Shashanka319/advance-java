@@ -20,9 +20,9 @@ public class Registration extends HttpServlet {
         String password = req.getParameter("password");
         String gender = req.getParameter("gender");
 
-        String encrypt=BCrypt.hashpw(password, BCrypt.gensalt(12));
+        String dbPassword = BCrypt.hashpw(password,BCrypt.gensalt(12));
 
-        User user = new User(name, email, address, encrypt, gender);
+        User user = new User(name, email, address, dbPassword, gender);
         UserDao userDao = new UserDao();
         userDao.save(user);
 
