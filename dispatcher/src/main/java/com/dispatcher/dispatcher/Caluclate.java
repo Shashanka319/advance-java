@@ -12,7 +12,7 @@ import java.io.IOException;
 @WebServlet("/caluclate")
 public class Caluclate extends HttpServlet {
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         int num1 =Integer.parseInt(req.getParameter("FN"));
         int num2 =Integer.parseInt(req.getParameter("SN"));
 

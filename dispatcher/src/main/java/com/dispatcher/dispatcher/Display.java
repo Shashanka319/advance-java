@@ -11,7 +11,7 @@ import java.io.PrintWriter;
 @WebServlet("/display")
 public class Display extends HttpServlet {
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         int sum =(int) req.getAttribute("mysum");
         int product =(int) req.getAttribute("myproduct");
 
