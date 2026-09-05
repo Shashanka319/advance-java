@@ -1,5 +1,4 @@
 package com.servlet;
-
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.Cookie;
@@ -25,11 +24,8 @@ public class Servlet1 extends HttpServlet {
         for (Cookie c : cookies) {
             System.out.println("Fetches the cookies from clint browser"+c.getName()+" "+c.getValue());
         }
-
        PrintWriter out= resp.getWriter();
        out.print("Login Succussfully ");
        out.print("Wellcome to Project "+name+" Your password is:"+password);
-
-
     }
 }

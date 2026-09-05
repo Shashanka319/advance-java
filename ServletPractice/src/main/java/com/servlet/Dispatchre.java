@@ -21,14 +21,14 @@ public class Dispatchre extends HttpServlet {
         int product = sc*fn;
         int sub = sc-fn;
 
-       PrintWriter out= resp.getWriter();
+        PrintWriter out= resp.getWriter();
         out.println("Substraction:"+sub);
         //out.println("Product:"+product);
 
         req.setAttribute("mysum",sum);
         req.setAttribute("myproduct",product);
         RequestDispatcher rd=req.getRequestDispatcher("result");
-        //rd.forward(req,resp);
-        rd.include(req,resp);
+        rd.forward(req,resp);
+        //rd.include(req,resp);
     }
 }
